@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dicom-tool"
+version = "0.1.0"
+description = "DICOM metadata extraction, validation, and NIfTI conversion for ML/AI pipelines"
+requires-python = ">=3.9"
+dependencies = [
+    "pydicom>=2.4",
+    "nibabel>=5.0",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+dicom-tool = "dicom_tool.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dicom_tool*"]
