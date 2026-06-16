@@ -57,7 +57,7 @@ def _normalise_kernel(manufacturer: Optional[str], kernel: Optional[str]) -> Opt
     for category in ("soft", "standard", "sharp", "bone", "lung"):
         if category in k:
             return category
-    return k
+    return None
 
 
 def check_slice_spacing(
