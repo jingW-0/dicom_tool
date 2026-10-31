@@ -239,9 +239,3 @@ Current coverage includes:
 - BIDS sidecar provenance enrichment
 - CLI behavior for `extract`, `validate`, `convert`, and `report`
 - Pipeline orchestration
-
-Latest local verification:
-
-```text
-84 passed
-```
